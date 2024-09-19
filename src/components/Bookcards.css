@@ -1,0 +1,61 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .top-picks-title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .book-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .book-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .book-card img {
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .book-card .card-body {
+    text-align: center;
+  }
+  
+  .book-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .book-card .card-text {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .book-card .btn {
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .book-card .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

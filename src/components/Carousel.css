@@ -1,0 +1,39 @@
+.carousel-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel-image {
+  height: 500px;
+  object-fit: cover;  /* Ensures the image covers the area */
+  width: 100%;  /* Ensure it stretches to the full width */
+}
+
+.carousel-inner {
+  border-radius: 15px;  /* Adds some rounding for a smooth look */
+  overflow: hidden;  /* Ensures images don’t overflow the container */
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);  /* Adds a dark overlay for better text visibility */
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.carousel-caption h5, .carousel-caption p {
+  color: #fff;  /* White text for better readability */
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 300px;  /* Adjusts height for smaller screens */
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;  /* Smaller font size for headings on small screens */
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;  /* Smaller font size for text on small screens */
+  }
+}
