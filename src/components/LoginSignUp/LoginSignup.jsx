@@ -1,42 +1,36 @@
-import React from 'react'
-import './LoginSignup.css'
+import React from 'react';
+import './LoginSignup.css'; // Import CSS for styling
 
-import user_icon from '../Assets/person.png'
-import email_icon from '../Assets/email.png'
-import password_icon from '../Assets/password.png'
-
-export const LoginSignup = () => {
+function LoginSignup({ pageType }) {
   return (
-    <div className='container'>
-       <div className="header">
-        <div className="text">Sign Up</div>
+    <div className="container">
+      <div className="header">
+        <h1 className="text">{pageType === 'login' ? 'Login' : 'Sign Up'}</h1>
         <div className="underline"></div>
-       </div>
-    <div className="inputs">
+      </div>
+
+      <div className="inputs">
         <div className="input">
-            <img src={user_icon} alt="" />
-            <input type="text" placeholder='Full Name' />
-        </div>
-        <div className="input">
-            <img src={email_icon} alt="" />
-            <input type="email" placeholder='Email ID' />
+          <input type="email" placeholder="Enter your email" />
         </div>
         <div className="input">
-            <img src={password_icon} alt="" />
-            <input type="password" placeholder='Password' />
+          <input type="password" placeholder="Enter your password" />
         </div>
+
+        {pageType === 'signup' && (
+          <div className="input">
+            <input type="password" placeholder="Confirm your password" />
+          </div>
+        )}
+
+        <div className="forgetpassword">Forgot password?</div>
+      </div>
+
+      <div className="submit-container">
+        <button className="submit">{pageType === 'login' ? 'Login' : 'Sign Up'}</button>
+      </div>
     </div>
-    <div className="forgetpassword">
-        Forget Password?
-    </div>
-    <div className="submit-container">
-        <div className="submit">
-            Sign Up
-        </div>
-        <div className="submit">
-            Sign Up
-        </div>
-    </div>
-    </div>
-  )
+  );
 }
+
+export default LoginSignup;
