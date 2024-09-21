@@ -27,6 +27,9 @@ export default function Navbar() {
         <li>
           <a className="nav-link" href="/about">About Us</a>
         </li>
+        <li>
+          <a className="nav-link" href="/explore">Explore</a>
+        </li>
        </ul>
        
       <form className="d-flex">
